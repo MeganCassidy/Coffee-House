@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+  width: 100vw; 
+  text-align: center; 
+}
+
+ul{
+    list-style: none;
+}
+
+.top-img{
+    background: url('../images/coffee1.jpg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-txt{
+    width: 100%;
+    height: 300px;
+    background: wheat;
+}
+
+.center-img{
+    background: url('../images/cake.jpg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.center-txt{
+    width: 100%;
+    height: 300px;
+    background: wheat;
+}
+
+
+.bottom-img{
+    background: url('../images/sandwich.jpg');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.bottom-txt{
+    width: 100%;
+    height: 300px;
+    background: wheat;
+}
