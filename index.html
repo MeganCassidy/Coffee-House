@@ -8,39 +8,60 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <ul class="menu-items">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Our Story</a></li> 
-        </ul> 
-    </nav>
 
+    <!-- Header Area -->
+    <header class="grid">
+        <section id="top-img">
+            <div class="main-img">
+                <div class="text-block">
+                    <h1 class="text" id="coffee">Coffee</h1>
+                    <h1 class="text" id="house">House</h1>
+                    <button class="btn">Click me</button>
+                </div> 
+            </div>
+        </section>
+    </header>
+
+    <!-- Main Area -->
+    <main class="grid">
+            <ul>
+                <li>  
+                    <div class="card" id="card1">
+                        <img src="images/shop.jpg" alt="about us img" class="card-img">
+                        <div class="card-content">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam at explicabo tempore? Nulla doloribus ipsum, eum officia culpa provident.</p>
+                        </div>
+                    </div>
+                </li>
     
-    <div class="top-img">
-        <img class="coffee-img" src="images/coffee1.jpg" alt="Coffee">
-        <div class="text-block">
-            <h1 class="text">Coffee</h1>
-            <h1 class="text">House</h1>
-            <button class="btn">Click me</button>
-        </div> 
-    </div>
-
-    <div class="cards">
-        <div class="card1">
-            <h2>Our Story</h2>
-        </div>
-        <div class="card2">
-            <h2>Menu</h2>
-        </div>
-        <div class="card3">
-            <h2>Contact</h2>
-        </div>
-    </div>
+                <li>  
+                    <div class="card" id="card2">
+                        <img src="images/menu.jpg" alt="menu img" class="card-img">
+                        <div class="card-content">
+                            <h3>Our Menu</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam at explicabo tempore? Nulla doloribus ipsum, eum officia culpa provident.</p>
+                        </div>
+                    </div>
+                </li>
     
-
-    <footer>
-        <p>some text for footer</p>
+                <li>  
+                    <div class="card" id="card3">
+                        <img src="images/beans.jpg" alt="beans img" class="card-img">
+                        <div class="card-content">
+                            <h3>Contact Us</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus numquam at explicabo tempore? Nulla doloribus ipsum, eum officia culpa provident.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    </main>
+   
+    <!-- Footer area -->
+    <footer class="grid">
+        <section>
+            <p>some text for footer</p>
+        </section>
     </footer>
 
     <script src="js/script.js"></script>
