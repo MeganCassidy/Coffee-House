@@ -1,22 +1,15 @@
 /* Mobile First CSS */ 
-
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    width: 100%;
-    height: 100vh;
-    margin-left: 0;
-    margin-top: 0;
     font-family: Calibri;
     text-align: center;
     background: #000;
+    width: 100vw;
  }
-
-
-
 
 
 /* Main Image Section*/ 
@@ -24,45 +17,42 @@ body{
     display: block;
     min-height: 370px;
     width: 100%;
+    position: relative;
+  
 }
 
 #top-img .main-img{
     position: absolute;
-    background: #000 url('../images/coffee1.jpg');
+    background: #000 url('../images/cup.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
     width: 100%;
     height: 370px;
-    z-index: -1;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 
 .text-block{
-    margin-left: 12em;
-    margin-top: 3em;
-    z-index: 5;
+    text-align: center;
+    margin-top: 18em;
+    position: relative;
+    z-index: 1;
 }
 
 .text{
     line-height: 0.6em;
-    color: rgba(255, 255, 255, 0.726);
+    color: black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-#coffee{
-    font-size: 60px;
-}
-
-.btn{
-    margin-top: 0.3em;
-    padding: 0.2em 0.6em;
-    border: 1px solid rgba(0, 0, 0, 0.87);
-    z-index: 2;
-    position: relative;
-}
-.text-block .btn:hover{
-    background: rgba(255, 255, 255, 0.836);
-    color: black; 
+.text::before{
+    content: "The";
+    display: block;
+    font-size: 24px;
+    padding-right: 11.5em;
 }
 
 
@@ -70,10 +60,11 @@ body{
 
 main{
     background: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .card{
     border: none;
-
 }
 
 li{
@@ -86,14 +77,80 @@ li{
     padding: 0.7em;
 }
 
+.card-content p{
+    padding-top: 10px;
+}
+
 .card-img{
     display: block;
     width: 100%;
-    height: auto;
+}
+
+footer{
+    color: white;
+    font-size: 10px;
 }
 
 
-/* Media Query */
+/* Media Queries */
+
+
+@media (max-width: 330px) {
+    #top-img{
+        min-height: 250px;
+    }
+    
+    #top-img .main-img{
+        height: 250px;
+        background-position: center;
+    }
+
+    .text-block{
+        margin-top: 10em;
+        letter-spacing: 2px;
+    }
+
+    .text{
+        font-size: 40px;
+        color: black;
+    }
+    .text::before{
+        content: "The";
+        display: block;
+        font-size: 20px;
+        padding-right: 12em;
+    }
+
+    main{
+        background: black;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .card{
+        border: none;
+    }
+    
+    li{
+        padding: 0 1em;
+        margin: 0;
+        margin-top: 1em;
+    }
+    
+    .card-content{
+        padding: 0.7em;
+    }
+    
+    .card-content p{
+        padding-top: 10px;
+    }
+    
+    .card-img{
+        display: block;
+        width: 100%;
+    }
+}
+
+
 
 @media (min-width: 700px){
     .grid{
@@ -101,42 +158,69 @@ li{
         grid-template-columns: 1fr 1fr 1fr;
     }
     #top-img{
-        min-height: 550px ;
+        min-height: 530px;
     }
     
     #top-img .main-img{
-        height: 550px;
+        height: 530px;
         background-position: center;
     }
 
     .text-block{
-        float: right;
-        margin-right: 20%;
-        margin-top: 12%;
+        margin-top: 23em;
         letter-spacing: 2px;
     }
 
-    #coffee{
+    .text{
         font-size: 100px;
+        color: black;
+    }
+    .text::before{
+        content: "The";
+        display: block;
+        font-size: 28px;
+        padding-right: 21em;
+    }
+
+    #coffee{
+        font-size: 120px;
     }
     #house{
         font-size: 70px;
     }
-    .btn{
-        font-size: 30px;
-        margin-top: 25px;
+
+    #main-section{
+        grid-template-rows: 1fr;
     }
 
     main ul{
         display: flex;
-        grid-column-start: 1;
-        grid-column-end: 4;
         justify-content: space-around;
+        grid-column: 1/4;
+        grid-row: 1/2;
     }
     main li{
         width: 33%;
     }
 
-    
+    .card-img{
+        height: 230px;
+    }
+
+    .left{
+        grid-column-start: 1;
+    }
+
+    .right{
+        grid-column-start: 3;
+    }
+    .center{
+        grid-column-start: 2;
+    }
+
+    footer{
+        font-size: 10px;
+    }
 
 }
+
