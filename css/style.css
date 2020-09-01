@@ -86,6 +86,16 @@ li{
     width: 100%;
 }
 
+.click{
+    cursor: pointer;
+    color: #F2A922;
+    text-decoration: underline;
+}
+
+.click:hover{
+    font-size: 22px;
+}
+
 footer{
     color: white;
     font-size: 10px;
