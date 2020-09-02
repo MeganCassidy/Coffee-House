@@ -42,18 +42,24 @@ table{
     background-size: cover;
 }
 
-.top-img h4{
+.top-img button{
+    background: rgba(255, 255, 255, 0.3);
     cursor: pointer;
-    font-size: 20px;
-    color: white;
-    text-decoration: underline;
-    padding-left: 2em;
-    padding-top: 1em;
-    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 1px;
+    margin-left: 1.8em;
+    margin-top: 1.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: none;
+    
+    
 }
 
-.top-img h4:hover{
-    font-size: 24px;
+.top-img button:hover{
+    transform: scale(1.2);
+    -webkit-box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.4);
 }
 
 .top-txt{
